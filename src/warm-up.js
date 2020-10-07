@@ -20,11 +20,11 @@ var inStock = 5;
 
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make 
 // the inStock count double what it currently is.
-var inStock = inStock * 2
+var inStock = inStock * 2;
 
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack! 
 // Use a built in math operator to decrement the inStock count by 1.
-var inStock = inStock - 1
+var inStock = inStock - 1;
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
@@ -46,12 +46,13 @@ inStock < 20 ? shouldOrderMore = true : shouldOrderMore = false;
 // Express the following in code: If the variable "stockCount" is greater or equal to 1, log
 // the statement 'I'm going to eat some [food]!', otherwise, log the statement 
 // 'We need to get some more [food].'
-var stockCount = 5
+var stockCount = inStock;
+
 if (stockCount >= 1) {
   return `I'm going to eat some ${food}!`
 } else {
   return `We need to get some more ${food}`
-}
+};
 
 
 // Express the following in code: If the variable "isFavorite" is true,
@@ -63,7 +64,7 @@ if (isFavorite === true) {
   return `My favorite food is ${food}!`
 } else {
   return `I recently ate ${food}`
-}
+};
 
 
 //------------------------- Arrays -------------------------//
@@ -71,18 +72,18 @@ if (isFavorite === true) {
 
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
-var vegetables = ['cucumber', 'tomatoes', 'eggplant', 'broccoli', 'carrots']
+var vegetables = ['cucumber', 'tomatoes', 'eggplant', 'broccoli', 'carrots'];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-vegetables[2]
+vegetables[2];
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
-var fruits = ['apple', 'pear', 'grapes', 'peach', 'pineapple', 'plum', 'kiwi']
+var fruits = ['apple', 'pear', 'grapes', 'peach', 'pineapple', 'plum', 'kiwi'];
 
 // Write the code to access the 5th element of the array, using bracket notation.
-fruits[4]
+fruits[4];
 
 //------------------------- Objects -------------------------//
 
@@ -94,9 +95,9 @@ var groceryStore = {
   isOpen: true;
   customerCount = 50;
   productAvailabilty = true;
-}
+};
 
 
 // Write the code to add the key of location, with the value of 'Denver, Colorado'. Use dot
 // notation to do this. DO NOT modify your code from above.
-groceryStore.location = 'Denver, Colorado'
+groceryStore.location = 'Denver, Colorado';

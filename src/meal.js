@@ -11,12 +11,19 @@ function createMenuItem(name, price, type) {
   return menu;
 };
 
+function addIngredients(topping, array) {
+ if (!array.includes(topping)) {
+    array.push(topping)
+  } 
+};
+
+
 
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
-  // addIngredients,
+  addIngredients,
   // formatPrice,
   // decreasePrice,
   // createRecipe

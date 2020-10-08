@@ -12,10 +12,17 @@ function refundOrder(orderNum, takeOut) {
   };
 };
 
+function listItems(toGoOrders) {
+  var sandwiches = [];
+  for (var i = 0; i< toGoOrders.length; i++) {
+    sandwiches.push(toGoOrders[i].item)
+  };
+  return sandwiches.toString().replace(/,/g, ', ');
+};
 
 module.exports = {
   takeOrder,
   refundOrder,
-  // listItems,
+  listItems,
   // searchOrder
 }

@@ -11,9 +11,9 @@ function createMenuItem(name, price, type) {
   return menu;
 };
 
-function addIngredients(topping, array) {
- if (!array.includes(topping)) {
-    array.push(topping)
+function addIngredients(topping, ingredients) {
+ if (!ingredients.includes(topping)) {
+    ingredients.push(topping)
   };
 };
 
@@ -24,7 +24,17 @@ return `$${price}`;
 function decreasePrice(price) {
   var discount = price * 0.10;
   return price - discount;
-}
+};
+
+function createRecipe(menuTitle, menuIngredients, menuType) {
+  var recipeObj = {
+    title: menuTitle,
+    ingredients: menuIngredients,
+    type: menuType,
+  };
+  
+  return recipeObj;
+};
 
 module.exports = {
   nameMenuItem,
@@ -32,7 +42,5 @@ module.exports = {
   addIngredients,
   formatPrice,
   decreasePrice,
-  // createRecipe
+  createRecipe,
 };
-
-

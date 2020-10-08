@@ -20,9 +20,18 @@ function listItems(toGoOrders) {
   return sandwiches.toString().replace(/,/g, ', ');
 };
 
+function searchOrder(toGos, food) {
+  for (var i = 0; i < toGos.length; i++) {
+    if (food === toGos[i].item) {
+      return true;
+    };
+  };
+  return false;
+};
+
 module.exports = {
   takeOrder,
   refundOrder,
   listItems,
-  // searchOrder
-}
+  searchOrder,
+};

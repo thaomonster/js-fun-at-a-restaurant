@@ -21,26 +21,13 @@ function addMenuItem(name, food) {
 };
 
 function removeMenuItem(name, food, type) {
-  for (var i = 0; i < name.menus.breakfast.length; i++) {
-  if (name.menus.breakfast[i].name === food) {
-      name.menus.breakfast.splice(i, 1);
+  var menuType = name.menus[type]
+  for (var i = 0; i < menuType.length; i++) {
+  if (menuType[i].name === food) {
+      menuType.splice(i, 1);
       return `No one is eating our ${food} - it has been removed from the ${type} menu!`;
       };
-    }
-  
-  for (var i = 0; i < name.menus.lunch.length; i++) {
-    if (name.menus.lunch[i].name === food) {
-        name.menus.lunch.splice(i, 1);
-        return `No one is eating our ${food} - it has been removed from the ${type} menu!`;
-      };
     };
-
-    for (var i = 0; i < name.menus.dinner.length; i++) {
-      if (name.menus.dinner[i].name === food) {
-          name.menus.dinner.splice(i, 1);
-          return `No one is eating our ${food} - it has been removed from the ${type} menu!`;
-        };
-      };
     return `Sorry, we don't sell ${food}, try adding a new recipe!`
 };
 

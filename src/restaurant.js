@@ -1,5 +1,5 @@
 function createRestaurant(name) {
-  var restaurantName = {
+  var restaurant = {
     name: name,
     menus: {
       breakfast: [],
@@ -7,7 +7,7 @@ function createRestaurant(name) {
       dinner: [],
     },
   };
-  return restaurantName;
+  return restaurant;
 };
 
 function addMenuItem(name, food) {

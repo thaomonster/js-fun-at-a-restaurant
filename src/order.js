@@ -13,11 +13,11 @@ function refundOrder(orderNum, takeOut) {
 };
 
 function listItems(toGoOrders) {
-  var sandwiches = [];
+  var list = [];
   for (var i = 0; i< toGoOrders.length; i++) {
-    sandwiches.push(toGoOrders[i].item)
+    list.push(toGoOrders[i].item)
   };
-  return sandwiches.toString().replace(/,/g, ', ');
+  return list.toString().replace(/,/g, ', ');
 };
 
 function searchOrder(toGos, food) {

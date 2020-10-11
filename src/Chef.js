@@ -1,7 +1,7 @@
 class Chef {
-  constructor(name, workPlae) {
+  constructor(name, workPlace) {
     this.name = name;
-    this.restaurant = workPlae;
+    this.restaurant = workPlace;
   };
 
   greetCustomer(customerName, morning) {
